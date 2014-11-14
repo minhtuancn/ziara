@@ -1,0 +1,14 @@
+## WINDOWS
+Thumbs.db
+
+## MAC OS
+.DS_Store
+
+## EMACS
+*~
+\#*
+.\#*
+
+## PROJECT::GENERAL
+.sass-cache
+node_modules

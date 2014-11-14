@@ -41,6 +41,6 @@ class Request{
 		foreach ($this->response->args as $key => $value) {
 			${$key} = $value;
 		}
-		include(_VIEWS_ . $this->response->name . '.php');
+		include(_LAYOUT_ . $this->response->layout . '.php');
 	}
 }

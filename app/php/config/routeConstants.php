@@ -17,3 +17,4 @@ define("_MODELS_", _PHP_."models/");
 
 // Layout folders
 define("_VIEWS_", _LAYOUT_."views/");
+define("_LAYOUTPARTS_", _LAYOUT_."parts/");

@@ -8,7 +8,9 @@
 </head>
 <body>
 	<?php
+		include(_LAYOUTPARTS_ . 'header.php');
 		include(_VIEWS_ . $this->response->view . '.php');
+		include(_LAYOUTPARTS_ . 'footer.php');
 	?>
 </body>
 </html>

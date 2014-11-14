@@ -41,4 +41,18 @@ class Route{
 		}
 		die("No route is corresponding to request !");
 	}
+	public function parseRoute($name,$args){
+		$s = $this->getRouteFromName($name)->uri;
+		foreach ($args as $key => $val) {
+			$s = str_replace('{'.$key.'}', $val, $s);
+		}
+		return $s;
+	}
+	private function getRouteFromName($name){
+		foreach ($this->register as $o) {
+			if ($o->name === $name) {
+				return $o;
+			}
+		}
+	}
 }
